@@ -20,7 +20,7 @@ import { Todo } from '../types/Todo'
 
 interface TodosProps {
   auth: Auth
-  history: any
+  history: History
 }
 
 interface TodosState {
@@ -97,7 +97,8 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         loadingTodos: false
       })
     } catch (e) {
-      alert(`Failed to fetch todos: ${e.message}`)
+      const { message } = e as Error;
+      alert(`Failed to fetch todos:  + (${message})`)
     }
   }
 
