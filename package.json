@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/history": "^5.0.0",
+    "react-router-dom": "^6.4.2"
+  }
+}
