@@ -17,9 +17,9 @@ provider:
   environment:
     TODOS_TABLE: Todos-${self:provider.stage}
     INDEX_NAME: USER_ID
-    IMAGES_S3_BUCKET: khjobran-serverless-todos-${self:provider.stage}
+    IMAGES_S3_BUCKET: edwardsmuss-serverless-todos-app-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
-    AUTH_0_JWKS_URL: https://dev-7-0pa3gh.us.auth0.com/.well-known/jwks.json
+    AUTH_0_JWKS_URL: https://dev-n8tk2y3o4xtmi5dw.us.auth0.com/.well-known/jwks.json
 
 
   tracing:
