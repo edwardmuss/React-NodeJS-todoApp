@@ -1,8 +1,8 @@
 import React from 'react'
 import Auth from './auth/Auth'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Router, Route } from 'react-router-dom'
 import Callback from './components/Callback'
-import { createBrowserHistory  as createHistory} from 'history';
+import { createBrowserHistory as createHistory } from "history";
 import App from './App';
 const history = createHistory()
 
@@ -17,7 +17,7 @@ const handleAuthentication = (props: any) => {
 
 export const makeAuthRouting = () => {
   return (
-    <Router>
+    <Router history={history}>
       <div>
         <Route
           path="/callback"

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, Route, Router, Switch, RouteComponentProps, withRouter } from 'react-router-dom'
+import { Link, Route, Router, Switch } from 'react-router-dom'
 import { Grid, Menu, Segment } from 'semantic-ui-react'
 
 import Auth from './auth/Auth'
@@ -14,7 +14,6 @@ export interface AppProps {
   auth: Auth
   history: any
 }
-
 
 export interface AppState {}
 
